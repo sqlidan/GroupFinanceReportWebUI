@@ -1,0 +1,26 @@
+
+{
+  "presets": [
+    ["@babel/preset-env", {   //@babel/preset-env配置
+      "targets": { //编译目标
+        "browsers": [">1%","last 2 versions"],
+        //node:'10'
+        "chrome": "49"  
+      }
+    }],
+    ["@vue/babel-preset-jsx"]
+  ],
+  "plugins": [
+    // ["@babel/plugin-transform-runtime"],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    // ["transform-vue-jsx"]
+    // ["@vue/babel-sugar-v-model"]
+  ],
+  "comments": false,
+  "compact": false 
+   
+  ////用@babel/transform-runtime编译es6
+  // "plugins": [
+  //   ['@babel/transform-runtime']
+  // ]
+}
